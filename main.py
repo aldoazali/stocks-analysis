@@ -7,8 +7,7 @@ import yfinance as yf
 # DOWNLOAD FUNCTION
 # ==========================
 
-def download_stock(stock):
-
+def download_stock(stock, start_date, end_date, data_folder):
     ticker = f"{stock}.JK"
     print(f"Downloading {ticker}...")
     df = yf.download(
@@ -119,7 +118,7 @@ def main():
     os.makedirs(data_folder, exist_ok=True)
 
     for stock in stocks:
-        download_stock(stock)
+        download_stock(stock, start_date, end_date, data_folder)
     print("Done.")
 
 if __name__ == "__main__":
