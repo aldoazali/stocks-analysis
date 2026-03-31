@@ -107,8 +107,17 @@ def main():
     # ==========================
     # USER PARAMETERS
     # ==========================
-    stocks = ["BBCA", "BBRI", "BMRI"]  # Stock codes (auto add .JK)
-    start_date = "2024-01-01"
+    stocks = ['BBCA','BBRI','BMRI','BBNI','BJBR','BJTM',
+                'ANTM','MDKA','HRTA','BRMS',
+                'ADRO','PTBA','ITMG','GEMS','INDY',
+                'MEDC','PGAS','AKRA',
+                'TLKM','TOWR','MTEL',
+                'UNTR','HEXA',
+                'ICBP','INDF','KLBF','SIDO',
+                'DMAS','DUTI',
+                'ASII'
+              ]  # Stock codes (auto add .JK)
+    start_date = "2023-01-01"
     end_date = "2026-01-01"
     data_folder = "stocks_data"
 
